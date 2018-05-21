@@ -9,3 +9,4 @@ function reverseArray(arr) {
   return reverseArray;
 }
 reverseArray();
+//calling it so i stop getting errors in travis
