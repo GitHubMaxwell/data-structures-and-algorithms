@@ -16,7 +16,7 @@ let insertShiftArray = (arr, num) => {
     }
   }
   return newArr;
-  // return undefined;
 };
-
 module.exports = insertShiftArray;
+
+//with help from anna / tests are mine

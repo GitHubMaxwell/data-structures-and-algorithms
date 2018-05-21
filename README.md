@@ -14,7 +14,7 @@ this is a function that takes in an array, creates a new empty array and pushes 
 
 # CHALLENGE 02: Insert and shift middle index of array
 <!-- Short summary or background information -->
-make a function that takes in an array 
+make a function that takes in an array and a value, inserts the value into the middle of the array, and returns that array. the function first finds the middle of the array and defines a new array. with two parameters (array, val) the for loop checks the iteration i against the "middle" variable and when it matches it inserts the val there and returns the new array.
 
 ## Challenge
 <!-- Description of the challenge -->
