@@ -8,7 +8,7 @@ this is a function that takes in an array, creates a new empty array and pushes 
 
 ## Solution
 <!-- Embedded whiteboard image -->
-<img src="assets/reverse_array_whiteboard.jpg">
+<img src="assets/array_reverse.jpg">
 
 
 
@@ -22,7 +22,7 @@ Write a function called insertShiftArray which takes in an array and the value t
 
 ## Solution
 <!-- Embedded whiteboard image -->
-<img src="assets/Whiteboard_challenge_2.jpg">
+<img src="assets/array_shift.jpg">
 
 
 
@@ -36,7 +36,7 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 
 ## Solution
 <!-- Embedded whiteboard image -->
-<img src="assets/Whiteboard_challenge_3.jpg">
+<img src="assets/array_binary_search.jpg">
 
 
 # CHALLENGE 04: ADJACENT PRODUCT
@@ -50,4 +50,4 @@ Without utilizing any of the built-in methods available to your language, return
 
 ## Solution
 <!-- Embedded whiteboard image -->
-<img src="assets/Whiteboard_challenge_4.jpg">
+<img src="assets/array_adjacent_product.jpg">
