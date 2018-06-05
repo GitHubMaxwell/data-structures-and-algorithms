@@ -51,3 +51,28 @@ Without utilizing any of the built-in methods available to your language, return
 ## Solution
 <!-- Embedded whiteboard image -->
 <img src="assets/array_adjacent_product.jpg">
+
+
+# CHALLENGE 06: Linked List Insertion
+<!-- Short summary or background information -->
+
+
+## Challenge
+<!-- Description of the challenge -->
+
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/ll_insertions.jpg">
+
+# CHALLENGE 07: Linked List Kth From End
+<!-- Short summary or background information -->
+
+
+## Challenge
+<!-- Description of the challenge -->
+
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/ll_kth_from_end.jpg">
