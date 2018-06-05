@@ -55,10 +55,11 @@ Without utilizing any of the built-in methods available to your language, return
 
 # CHALLENGE 06: Linked List Insertion
 <!-- Short summary or background information -->
+need to create a link list constructor class along with methods to do the desired insertions actions
 
 
 ## Challenge
-<!-- Description of the challenge -->
+create a linked list class that has methods to append, insert before, and insert after nodes
 
 
 ## Solution
@@ -67,10 +68,11 @@ Without utilizing any of the built-in methods available to your language, return
 
 # CHALLENGE 07: Linked List Kth From End
 <!-- Short summary or background information -->
-
+need to create a link list constructor class along with method to do the desired search action
 
 ## Challenge
 <!-- Description of the challenge -->
+create a linked list class that has a method to append nodes simply to have something to work with and a method used to search for specific nodes in the linke list and return the value
 
 
 ## Solution
