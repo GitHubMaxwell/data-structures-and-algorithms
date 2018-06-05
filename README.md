@@ -8,7 +8,7 @@ this is a function that takes in an array, creates a new empty array and pushes 
 
 ## Solution
 <!-- Embedded whiteboard image -->
-<img src="assets/reverse_array_whiteboard.jpg">
+<img src="assets/array_reverse.jpg">
 
 
 
@@ -22,7 +22,7 @@ Write a function called insertShiftArray which takes in an array and the value t
 
 ## Solution
 <!-- Embedded whiteboard image -->
-<img src="assets/Whiteboard_challenge_2.jpg">
+<img src="assets/array_shift.jpg">
 
 
 
@@ -36,6 +36,43 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 
 ## Solution
 <!-- Embedded whiteboard image -->
-<img src="assets/Whiteboard_challenge_3.jpg">
+<img src="assets/array_binary_search.jpg">
 
 
+# CHALLENGE 04: ADJACENT PRODUCT
+<!-- Short summary or background information -->
+build the LargestProduct function that takes in a 2D array and returns the largest product between neighboring values in the matrix (horizontally, vertically, diagonally)
+
+## Challenge
+<!-- Description of the challenge -->
+Write a function called LargestProduct which takes in a 2D array, of arbitrary size.
+Without utilizing any of the built-in methods available to your language, return the largest product of 2 adjacent values within the 2D array. 
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/array_adjacent_product.jpg">
+
+
+# CHALLENGE 06: Linked List Insertion
+<!-- Short summary or background information -->
+
+
+## Challenge
+<!-- Description of the challenge -->
+
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/ll_insertions.jpg">
+
+# CHALLENGE 07: Linked List Kth From End
+<!-- Short summary or background information -->
+
+
+## Challenge
+<!-- Description of the challenge -->
+
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/ll_kth_from_end.jpg">
