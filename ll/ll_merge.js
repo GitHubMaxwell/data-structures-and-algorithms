@@ -32,50 +32,45 @@ class LinkedList {
 
   static mergeLists(llOne, llTwo) {
     let currentOne = llOne.head;
-    // console.log('llOne.head: ',currentOne)
-    // let tempOne = currentOne.next;
-    let tempOne = llOne.head;
-    // console.log('llOne.next: ',tempOne)
+    //this should stay llOne head
     let currentTwo = llTwo.head;
-    // console.log('llOne.head: ',llOne.head)
-    let tempTwo = llTwo.head;
-    //if llOne.head !== llTwo.head {do that} because you only have to do it once
-    //currentOne = currentTwo;
+
+    // let tempOne = llOne.head;
+    // let tempTwo = llTwo.head;
+
   
     while(currentOne.next === null || currentTwo.next === null) {
-      currentTwo.next = tempOne;
-      tempOne = tempTwo.next;
-    }
+    // while(currentOne || currentTwo) {
+      
+      if(!currentTwo) {
+        currentOne.length++;
+        return currentOne;
+      }
+      if(currentOne.next === null) {
+        currentOne.next = currentTwo;
+        //if theres not a next node in the first list then reassign the last value the current second list node is and then add to the lenght and send back the listOne
+        currentOne.length++;
+        return currentOne;
+      }
+      /////////////////////////////////
+      let tempOne = llOne.head;
+      let tempTwo = llTwo.head;
+      /////////////////////////////////
+
+      currentOne.next = currentTwo;
+      //which current two is the head at this point
+      currentTwo.next = tempOne.next;
+
+      currentOne = tempOne.next;
+      currentTwo = tempTwo.next;
+      console.log('LLONE CURRENT ',currentOne);
+    }//while loop
+
+    // console.log('LLONE CURRENT ',currentOne);
+
   }
 }
 
-//these functions will go in the tests  
-function llOne() {
-  let newNode = new LinkedList();
-  newNode.append(1);
-  newNode.append(3);
-  // console.log('llOne',newNode)
-  // console.log('newNode Head next val',newNode.head.next.next.next.val)
-  return newNode;
-}
-let linkOne = llOne();
-  
-function llTwo() {
-  let newNode = new LinkedList();
-  newNode.append(2);
-  newNode.append(4);
-  // console.log('llTwo',newNode)
-  // console.log('newNode Head next val',newNode.head.next.next.next.val)
-  return newNode;
-}
-let linkTwo = llTwo();
-  
-// console.log('linkOne',linkOne);
-// console.log('linkTwo',linkTwo);
-  
-//have to call
-// let mergeList = linkOne.mergeLists(linkOne,linkTwo);
-let mergeList = LinkedList.mergeLists(linkOne, linkTwo);
-console.log('mergeList: ',mergeList);
-  
+module.exports = LinkedList;
+
   
