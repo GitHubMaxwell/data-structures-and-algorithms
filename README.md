@@ -74,7 +74,30 @@ need to create a link list constructor class along with method to do the desired
 <!-- Description of the challenge -->
 create a linked list class that has a method to append nodes simply to have something to work with and a method used to search for specific nodes in the linke list and return the value
 
-
 ## Solution
 <!-- Embedded whiteboard image -->
 <img src="assets/ll_kth_from_end.jpg">
+
+# CHALLENGE 08: Linked List Merge
+<!-- Short summary or background information -->
+write a funciton that takes in two linklists in aas arguments and combines them in a zipper pattern and then returns back that new linklist 
+
+## Challenge
+<!-- Description of the challenge -->
+Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the single list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/ll_merge.jpg">
+
+# CHALLENGE 09: Linked List Detect Loop
+<!-- Short summary or background information -->
+write class method called hasLoop that takes no arguments and returns a boolean telling you if the LinkList your testing is circular or not
+
+## Challenge
+<!-- Description of the challenge -->
+Write a method for the Linked List class called hasLoop which takes no arguments. Return a boolean that indicates whether or not a circular reference or loop is present in the linked list. Your implementation must not use any additional memory or modify the nodes of the linked list. You have access to the Node class and all the standard properties on the Linked List class as well as the methods created in previous challenges. 
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/ll_detect_loop.jpg">
