@@ -101,3 +101,24 @@ Write a method for the Linked List class called hasLoop which takes no arguments
 ## Solution
 <!-- Embedded whiteboard image -->
 <img src="assets/ll_detect_loop.jpg">
+
+# CHALLENGE 11: Stacks and Queues: Queue with Stacks
+<!-- Short summary or background information -->
+
+## Challenge
+<!-- Description of the challenge -->
+       
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/queue_with_stacks.jpg">
+
+# CHALLENGE 12: Stacks and Queues: Queue with Stacks
+<!-- Short summary or background information -->
+
+## Challenge
+<!-- Description of the challenge -->      
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/ll_detect_loop.jpg">

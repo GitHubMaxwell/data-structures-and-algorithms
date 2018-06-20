@@ -2,11 +2,11 @@ let linkedList = require('../ll/ll_kth_from_end.js');
 
 describe('Linked List Kth From End Module', () => {
 
-  it('POL: undefined', () => {
+  xit('POL: undefined', () => {
     const actual = new linkedList();
     expect(actual.length).toBe(0);
   });
-  it('INSERT: from 2nd to last in linked list', () => {
+  xit('INSERT: from 2nd to last in linked list', () => {
     const expected = 3;
     
     const newNode = new linkedList();
