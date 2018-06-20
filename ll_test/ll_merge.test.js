@@ -4,7 +4,7 @@ let LinkedList = require('../ll/ll_merge.js');
 
 describe('Linked List Detect Loop Module', () => {
 
-  it('INSERT: should return false', () => {
+  xit('INSERT: should return false', () => {
     
     const llOne = new LinkedList();
     llOne.append(1);

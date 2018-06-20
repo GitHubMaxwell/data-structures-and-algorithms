@@ -2,13 +2,13 @@ let linkedList = require('../ll/ll_insertions.js');
 
 describe('Linked List Insertion Module', () => {
 
-  it('POL: return length 0', () => {
+  xit('POL: return length 0', () => {
     const LL = new linkedList();
     const actual = LL.length;
     expect(actual).toBe(0);
   });  
   
-  it('APPEND: should return length 1', () => {
+  xit('APPEND: should return length 1', () => {
     const expected = 1;
     
     const newNode = new linkedList();
@@ -16,7 +16,7 @@ describe('Linked List Insertion Module', () => {
     expect(newNode.length).toBe(expected);
   });
 
-  it('APPEND: should return length 2', () => {
+  xit('APPEND: should return length 2', () => {
     const expected = 2;
     
     const newNode = new linkedList();
