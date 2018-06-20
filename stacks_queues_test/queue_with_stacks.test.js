@@ -1,8 +1,8 @@
 let Queue = require('../stacks_queues/queue_with_stacks');
 
-describe('Linked List Insertion Module', () => {
+describe('QUEUE with STACKS MODULE', () => {
 
-  it('ENQUEUE: should insert value at front of the stack and return LL whos value is 4', () => {
+  it('ENQUEUE method: should insert value at front of the stack and return LL whos value is 4', () => {
     const newLL = new Queue();
     const newAppend = newLL.append(1);
     const newAppend1 = newLL.append(2);
@@ -13,8 +13,8 @@ describe('Linked List Insertion Module', () => {
     console.log('AFTER ENQUEUE ', newLL);
 
     // console.log('HEAD VALUE ',newLL.head.val);
-    const actual = newLL.head.val;
-    expect(actual).toEqual(4);
+    const actual = newLL.head.next.val;
+    expect(actual).toEqual(1);
   });
 
 });

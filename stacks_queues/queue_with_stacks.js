@@ -24,7 +24,7 @@ class Queue {
       while(current.next) {
         current = current.next;
       }
-          
+
       current.next = new Node(val);
       this.length = this.length + 1;
     }
@@ -42,14 +42,6 @@ class Queue {
 
     while(current.next) {
 
-      //if we are at the end of the list create a new node and add the currently held oneOver value to it and end the while loop
-      if (current.next === null) {
-        // console.log('CURRENT NEXT NULL: ', current.next);
-        this.length = this.length + 1;
-        current.next = new Node(oneOver);
-        break;
-      }
-
       if (current === this.head) {
         //if we are on the HEAD, change the value to the one passed in
         oneOver = current.val;
@@ -61,8 +53,16 @@ class Queue {
         console.log('NEW CURRENT should be two', current);
       }
 
+      //if we are at the end of the list create a new node and add the currently held oneOver value to it and end the while loop
+      if (current.next === null) {
+        console.log('ONE OVER here should be two: ', oneOver);
+        this.length = this.length + 1;
+        current.next = new Node(oneOver);
+        break;
+      }
+
       // hold the value ahead of us temporarily to be placed a position after that while placing the currently held temp value on the current we are on
-      console.log('SHOULD BE HERE TWICE', current.val); 
+      console.log('SHOULD BE HERE TWICE'); 
       current.val = oneOver;
       oneOver = current.val;
       current = current.next;
