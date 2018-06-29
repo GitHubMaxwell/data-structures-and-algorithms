@@ -156,4 +156,4 @@ cant put a larger disc on a smaller disc
 
 ## Solution
 <!-- Embedded whiteboard image -->
-<img src="assets/towers-of-hanoi.jpg">
+<img src="assets/tower-of-hanoi.jpg">
