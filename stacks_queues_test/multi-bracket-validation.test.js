@@ -1,14 +1,43 @@
-let Tower = require('../stacks_queues/multi-bracket-validation.js');
+let multiBracketValidation = require('../stacks_queues/multi-bracket-validation.js');
 
 describe('BRACKET VALIDATION MODULE', () => {
 
-  xit('should resolve to true', () => {
+  it('should resolve to true', () => {
 
-    const tower = Tower.towersOfHanoi(2);
+    const str = multiBracketValidation('{}');
+    // console.log('STR: ',str);
+    expect(str).toEqual(true);
+  });
 
-    console.log('BEFORE ENQUEUE ', tower);
-    // const actual = newLL.head.next.val;
-    // expect(actual).toEqual(2);
+  it('should resolve to true', () => {
+    const str = multiBracketValidation('{}(){}');
+    expect(str).toEqual(true);
+  });
+
+  it('should resolve to true', () => {
+    const str = multiBracketValidation('()[[Extra Characters]]');
+    expect(str).toEqual(true);
+  });
+
+  it('should resolve to true', () => {
+    const str = multiBracketValidation('(){}[[]]');
+    expect(str).toEqual(true);
+  });
+
+  it('should resolve to true', () => {
+    const str = multiBracketValidation('{}{Code}[Fellows](())');
+    expect(str).toEqual(true);
+  });
+
+  it('should resolve to false', () => {
+    const str = multiBracketValidation('[({}]');
+    expect(str).toEqual(false);
+  });
+
+  it('should resolve to false', () => {
+    const str = multiBracketValidation('(](');
+    // console.log('STR: ',str);
+    expect(str).toEqual(false);
   });
 
 });
