@@ -104,21 +104,56 @@ Write a method for the Linked List class called hasLoop which takes no arguments
 
 # CHALLENGE 11: Stacks and Queues: Queue with Stacks
 <!-- Short summary or background information -->
+create a class called Queue and make methods for enqueue and dequeue
 
 ## Challenge
 <!-- Description of the challenge -->
+you have access to two stacks
+the method enqueue should take in a value and essetially "shift()" the value onto the stack
+the method dequeue should take off and return the last value in the stack
        
 
 ## Solution
 <!-- Embedded whiteboard image -->
 <img src="assets/queue_with_stacks.jpg">
 
-# CHALLENGE 12: Stacks and Queues: Queue with Stacks
+# CHALLENGE 12: Stacks and Queues: Fifo Animal Shelter
 <!-- Short summary or background information -->
+make an animla shelter that takes in only dogs and cats and when someone wants either a dog or a cat they are given the longest waiting one
 
 ## Challenge
-<!-- Description of the challenge -->      
+<!-- Description of the challenge --> 
+create class called AnimalShelter which hold only dogs or cats in a stack (FIFO)
+the method enqueue(animal) should add a dog or a cat to the shelter
+the method dequeue(pref) should take off the longest waiting dog or cat
 
 ## Solution
 <!-- Embedded whiteboard image -->
-<img src="assets/ll_detect_loop.jpg">
+<img src="assets/fifo_animal_shelter.jpg">
+
+# CHALLENGE 13: Stacks and Queues: Multibracket Validation
+<!-- Short summary or background information -->
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets: {} [] ()
+## Challenge
+<!-- Short summary or background information -->
+make function called multiBracketValidation(string)
+the function should check if the bracket is balanced or not
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/multi-bracket-validation.jpg">
+
+# CHALLENGE 14: Stacks and Queues: Towers of Hanoi
+<!-- Short summary or background information -->
+the idea is to move a tower of discs from the left over to the right
+
+## Challenge
+<!-- Description of the challenge -->
+make function called towersOfHanoi(n)
+move entire tower (which starts at the left) to the right
+one disc at a time
+cant put a larger disc on a smaller disc
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/towers-of-hanoi.jpg">
