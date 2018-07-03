@@ -1,82 +1,48 @@
-class Node {
-  constructor(animal) {
-    this.animal = animal;
-    this.next = null;
-    // this.length = length + 1;
-  }
-}
-  
-class Queue {
+'use strict';
+let counter = 0;
+
+class AnimalShelter {
   constructor() {
-    this.head = null;
-    this.length = 0;
+    this.animals = [];
   }
-      
-  append(val) {
-    
-    if(!this.head) {
-      this.head = new Node(val);
-      this.length = this.length + 1;
-    
-    }else{
-      let current = this.head;
-    
-      while(current.next) {
-        current = current.next;
-      }
-  
-      current.next = new Node(val);
-      this.length = this.length + 1;
-    }
-  }
-  
+
   enqueue(animal) {
-    //using FIFO approach
-    // console.log('PASSED IN VALUE ', val);
-  
-    let current = this.head;
-    // console.log('CURRENT ', current);
-  
-    // let oneOver = current.next.val;
-    let oneOver;
-  
-    while(current.next) {
-  
-      // this conditional isnt right
-      if (current === this.head) {
-        //if we are on the HEAD, change the value to the one passed in
-        oneOver = current.val;
-        console.log('ONE OVER ', oneOver);
-        current.val = val;
-        console.log('CURRENT VAL should be three: ', current.val);
-        //change the current to the next
-        current = current.next;
-        console.log('NEW CURRENT should be two', current);
-      }
-  
-      //if we are at the end of the list create a new node and add the currently held oneOver value to it and end the while loop
-      if (current.next === null) {
-        console.log('ONE OVER here should be two: ', oneOver);
-        this.length = this.length + 1;
-        current.next = new Node(oneOver);
-        break;
-      }
-  
-      // hold the value ahead of us temporarily to be placed a position after that while placing the currently held temp value on the current we are on
-      console.log('SHOULD BE HERE TWICE'); 
-      current.val = oneOver;
-      oneOver = current.val;
-      current = current.next;
+    if(animal.type === 'cat') {
+      animal.order = counter;
+      this.animals.push(animal);
+      counter++;
+      return this.animals;
     }
+    if(animal.type === 'dog') {
+      animal.order = counter;
+      this.animals.push(animal);
+      counter++;
+      return this.animals;
+    }
+    return 'wrong animal type';
+    
   }
   
-  //   dequeue(pref) {
-  //     // using FIFO approach
-        
-  //   }
-  
+
+  dequeue(pref) {
+    console.log('PREF: ', pref);
+
+    if(pref !== 'dog' && pref !== 'cat') {
+      return this.animals[0].order > this.animals[1].order ? this.animals[0].shift() : this.animals[1].shift();
+    }
+    // console.log('BEFORE FOR');
+    // console.log('IN IF FOR: ', pref, this.animals);
+
+    for (let i = 0; i < this.animals.length; i++) {
+      if (this.animals[i].type === pref)
+        // console.log('IN IF FOR: ', this.animals[i]);
+        this.animals.filter(item => item !== pref);
+      // let deq = this.animals[i].indexOf();
+      return this.animals; 
+    }
+  }
 }
     
-module.exports = Queue;
+module.exports = AnimalShelter;
     
       
