@@ -2,8 +2,8 @@ let AnimalShelter = require('../stacks_queues/fifo_animal_shelter.js');
 
 describe('FIFO ANIMAL SHELTER MODULE', () => {
 
-  xit('Enqueue a cat', () => {
-    let newThing = new AnimalShelter();
+  it('Enqueue a cat', () => {
+    let newThing = new AnimalShelter;
     let obj = {
       type:'cat',
     };
@@ -14,8 +14,8 @@ describe('FIFO ANIMAL SHELTER MODULE', () => {
     expect(enqueue[0].order).toEqual(0);
   });
 
-  xit('Enqueue a dog', () => {
-    let newThing = new AnimalShelter();
+  it('Enqueue a dog', () => {
+    let newThing = new AnimalShelter;
     let obj = {
       type:'dog',
     };
@@ -26,8 +26,8 @@ describe('FIFO ANIMAL SHELTER MODULE', () => {
     expect(enqueue[0].order).toEqual(0);    
   });
 
-  xit('Enqueue WRONG animal type', () => {
-    let newThing = new AnimalShelter();
+  it('Enqueue WRONG animal type', () => {
+    let newThing = new AnimalShelter;
     let obj = {
       type:'lizzard',
     };
@@ -38,7 +38,7 @@ describe('FIFO ANIMAL SHELTER MODULE', () => {
   });
 
   it('Dequeue', () => {
-    let newThing = new AnimalShelter();
+    let newThing = new AnimalShelter;
 
     let dogObj = {
       type:'dog',

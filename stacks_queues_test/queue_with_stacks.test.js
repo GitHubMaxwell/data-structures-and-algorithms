@@ -1,41 +1,25 @@
-let Queue = require('../stacks_queues/queue_with_stacks');
+let Queue = require('../stacks_queues/queue_with_stacks.js');
 
-// 3 tests
-/*
-break this down into steps
-
-1 step make a link list constructor
-*/
 describe('QUEUE with STACKS MODULE', () => {
 
-  xit('ENQUEUE method: should insert value at front of the stack and return LL whos value is 4', () => {
-    const newLL = new Queue();
-    newLL.append(1);
-    newLL.append(2);
-    // const newAppend2 = newLL.append(3);
-    // console.log('BEFORE ENQUEUE ', newLL);
-
-    const enqueue = newLL.enqueue(4);
-    // console.log('AFTER ENQUEUE ', newLL);
-
-    // console.log('HEAD VALUE ',newLL.head.val);
-    const actual = newLL.head.next.val;
-    expect(actual).toEqual(1);
+  it('ENQUEUE QUEUE method', () => {
+    //should enqueue an element to the front NOT the back
+    const newQueue = new Queue;
+    newQueue.enqueue(1);
+    newQueue.enqueue(2);
+    expect(newQueue.front.value).toEqual(1);
   });
 
-  xit('REVERSE LL method: last first value should be 2', () => {
-    const newLL = new Queue();
-    newLL.append(1);
-    newLL.append(2);
-    // const newAppend2 = newLL.append(3);
-    // console.log('BEFORE REVERSE ', newLL);
+  it('DEQUEUE QUEUE method', () => {
+    // should dequeue the element at the back NOT the front
+    const newQueue = new Queue;
+    newQueue.enqueue(1);
+    newQueue.enqueue(2);
 
-    const reverse = newLL.reverse();
-    // console.log('AFTER REVERSE ', newLL);
+    let oldFront = newQueue.dequeue();
 
-    // console.log('HEAD VALUE ',newLL.head.val);
-    const actual = reverse.head.val;
-    expect(actual).toEqual(2);
+    expect(oldFront).toEqual(1);
+    expect(newQueue.front.value).toEqual(2);
   });
 
 });
