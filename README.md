@@ -102,6 +102,7 @@ Write a method for the Linked List class called hasLoop which takes no arguments
 <!-- Embedded whiteboard image -->
 <img src="assets/ll_detect_loop.jpg">
 
+
 # CHALLENGE 11: Stacks and Queues: Queue with Stacks
 <!-- Short summary or background information -->
 create a class called Queue and make methods for enqueue and dequeue
@@ -112,10 +113,10 @@ you have access to two stacks
 the method enqueue should take in a value and essetially "shift()" the value onto the stack
 the method dequeue should take off and return the last value in the stack
        
-
 ## Solution
 <!-- Embedded whiteboard image -->
 <img src="assets/queue_with_stacks.jpg">
+
 
 # CHALLENGE 12: Stacks and Queues: Fifo Animal Shelter
 <!-- Short summary or background information -->
