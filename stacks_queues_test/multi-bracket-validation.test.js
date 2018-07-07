@@ -39,5 +39,4 @@ describe('BRACKET VALIDATION MODULE', () => {
     // console.log('STR: ',str);
     expect(str).toEqual(false);
   });
-
 });
