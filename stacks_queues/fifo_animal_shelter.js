@@ -1,23 +1,21 @@
 'use strict';
-let counter = 0;
+// let counter = 0;
 
 class AnimalShelter {
   constructor() {
+    this.counter = 0;
     this.animals = [];
   }
 
   enqueue(animal) {
-    if(animal.type === 'cat') {
-      animal.order = counter;
-      this.animals.push(animal);
-      counter++;
-      return this.animals;
-    }
-    if(animal.type === 'dog') {
-      animal.order = counter;
-      this.animals.push(animal);
-      counter++;
-      return this.animals;
+    if(animal.type === 'cat' || animal.type === 'dog') {
+      animal.order = this.counter; //?
+      this.counter++;
+      console.log(animal);
+      this.animals.push(animal);//?
+      console.log(this.animals);
+      //the counter is adding stuff wrong
+      return this;//?
     }
     return 'wrong animal type';
     
@@ -25,7 +23,7 @@ class AnimalShelter {
   
 
   dequeue(pref) {
-    console.log('PREF: ', pref);
+    // console.log('PREF: ', pref);
 
     if(pref !== 'dog' && pref !== 'cat') {
       return this.animals[0].order > this.animals[1].order ? this.animals[0].shift() : this.animals[1].shift();

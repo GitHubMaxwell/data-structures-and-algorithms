@@ -3,14 +3,14 @@ module.exports = function (wallaby) {
   return {
   
     files: [
-      'arrays/**/*.js',
-      'll/**/*.js',
+      // 'arrays/**/*.js',
+      // 'll/**/*.js',
       'stacks_queues/**/*.js',
     ],
   
     tests: [
-      'arrays_test/**/*.test.js',
-      'll_test/**/*.test.js',
+      // 'arrays_test/**/*.test.js',
+      // 'll_test/**/*.test.js',
       'stacks_queues_test/**/*.test.js',
     ],
   
@@ -18,20 +18,20 @@ module.exports = function (wallaby) {
     env: {
       type: 'node',
     },
-    compilers: {
-      '**/*.js': wallaby.compilers.babel({
-        'presets': [
-          'env',
-          'react',
-          'stage-0',
-        ],
-        'plugins': [
-          'transform-class-properties',
-          'transform-decorators',
-          'transform-react-constant-elements',
-          'transform-react-inline-elements',
-        ],
-      }),
-    },
+    // compilers: {
+    //   '**/*.js': wallaby.compilers.babel({
+    //     'presets': [
+    //       'env',
+    //       'react',
+    //       'stage-0',
+    //     ],
+    //     'plugins': [
+    //       'transform-class-properties',
+    //       'transform-decorators',
+    //       'transform-react-constant-elements',
+    //       'transform-react-inline-elements',
+    //     ],
+    //   }),
+    // },
   };
 };
