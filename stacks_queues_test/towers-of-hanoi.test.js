@@ -41,5 +41,4 @@ describe('TOWER OF HANOI MODULE', () => {
     expect(top).toEqual(1);
     expect(bottom).toEqual(10);
   });
-
 });

@@ -106,5 +106,3 @@ class Stack {
 }
 
 module.exports = Stack;
-
-// towersOfHanoi(2);
