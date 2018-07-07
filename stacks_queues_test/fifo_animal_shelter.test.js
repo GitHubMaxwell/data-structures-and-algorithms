@@ -7,11 +7,13 @@ describe('FIFO ANIMAL SHELTER MODULE', () => {
     let obj = {
       type:'cat',
     };
-    let enqueue = newThing.enqueue(obj);//?
-    // console.log('ENQUEUE CAT: ',enqueue);
+    let enqueue = newThing.enqueue(obj);
+    let type = enqueue.animals[0].type;
+    let order = enqueue.animals[0].order;
 
-    expect(enqueue[0].type).toEqual('cat');
-    expect(enqueue[0].order).toEqual(0);
+
+    expect(type).toEqual('cat');
+    expect(order).toEqual(0);
   });
 
   it('Enqueue a dog', () => {
@@ -22,11 +24,12 @@ describe('FIFO ANIMAL SHELTER MODULE', () => {
     
     let enqueue = newThing.enqueue(obj);
     // console.log('ENQUEUE DOG: ',enqueue);
-    let enqType = enqueue[0].type;
-    let enqOrd = enqueue[0].order;
+    let type = enqueue.animals[0].type;
+    let order = enqueue.animals[0].order;
 
-    expect(enqType).toEqual('dog');
-    expect(enqOrd).toEqual(0);
+
+    expect(type).toEqual('dog');
+    expect(order).toEqual(0);
   });
 
   it('Enqueue WRONG animal type', () => {
@@ -35,7 +38,6 @@ describe('FIFO ANIMAL SHELTER MODULE', () => {
       type:'lizzard',
     };
     let enqueue = newThing.enqueue(obj);
-    // console.log('ENQUEUE lizzard: ',enqueue);
     expect(enqueue).toEqual('wrong animal type');
   });
 
@@ -51,12 +53,32 @@ describe('FIFO ANIMAL SHELTER MODULE', () => {
 
     newThing.enqueue(catObj);
     newThing.enqueue(dogObj);
-    newThing.enqueue(catObj);
 
     let dequeue = newThing.dequeue('dog');
-    console.log('DEQUEUE: ',dequeue);
+    // console.log('DEQUEUE: ',dequeue);
 
-    expect(dequeue).toEqual('poop');    
+    expect(dequeue.type).toEqual('dog');    
+  });
+
+  it('Dequeue', () => {
+    const newThing = new AnimalShelter;
+
+    let dogObj = {
+      type:'dog',
+    };
+    let catObj = {
+      type:'cat',
+    };
+
+    newThing.enqueue(catObj);
+    newThing.enqueue(catObj);
+    newThing.enqueue(dogObj);
+    // console.log('DEQUEUE: ',newThing);
+
+    let dequeue = newThing.dequeue();
+    // console.log('DEQUEUE: ',dequeue);
+
+    expect(dequeue[0].type).toEqual('cat');    
   });
 });
 
