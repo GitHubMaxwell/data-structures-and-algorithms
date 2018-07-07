@@ -2,9 +2,9 @@
 
 let LinkedList = require('../ll/ll_merge.js');
 
-describe('Linked List Detect Loop Module', () => {
+xdescribe('Linked List Detect Loop Module', () => {
 
-  xit('INSERT: should return false', () => {
+  it('INSERT: should return false', () => {
     
     const llOne = new LinkedList();
     llOne.append(1);
