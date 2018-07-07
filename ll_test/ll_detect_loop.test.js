@@ -1,8 +1,8 @@
 let linkedList = require('../ll/ll_detect_loop.js');
 
-describe('Linked List Detect Loop Module', () => {
+xdescribe('Linked List Detect Loop Module', () => {
 
-  xit('INSERT: should return false', () => {
+  it('INSERT: should return false', () => {
     
     const linkList = new linkedList();
     linkList.append(2);
@@ -14,7 +14,7 @@ describe('Linked List Detect Loop Module', () => {
   });
 
 
-  xit('INSERT: should return false', () => {
+  it('INSERT: should return false', () => {
     
     const linkList = new linkedList();
     linkList.append(2);

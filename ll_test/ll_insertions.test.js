@@ -1,27 +1,27 @@
 let linkedList = require('../ll/ll_insertions.js');
 
-describe('Linked List Insertion Module', () => {
+xdescribe('Linked List Insertion Module', () => {
 
-  xit('POL: return length 0', () => {
+  it('POL: return length 0', () => {
     const LL = new linkedList();
     const actual = LL.length;
     expect(actual).toBe(0);
   });  
   
-  xit('APPEND: should return length 1', () => {
+  it('APPEND: should return length 1', () => {
     const expected = 1;
     
     const newNode = new linkedList();
-    const newAppend = newNode.append(4);
+    newNode.append(4);
     expect(newNode.length).toBe(expected);
   });
 
-  xit('APPEND: should return length 2', () => {
+  it('APPEND: should return length 2', () => {
     const expected = 2;
     
     const newNode = new linkedList();
-    const newAppend = newNode.append(4);
-    const newAppend1 = newNode.append(4);
+    newNode.append(4);
+    newNode.append(4);
     expect(newNode.length).toBe(expected);
   });
   // it('INSERT BEFORE: should insert 5 BEFORE 2', () => {
