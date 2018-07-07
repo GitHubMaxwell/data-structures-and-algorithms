@@ -55,7 +55,7 @@ describe('FIFO ANIMAL SHELTER MODULE', () => {
     newThing.enqueue(dogObj);
 
     let dequeue = newThing.dequeue('dog');
-    console.log('DEQUEUE: ',dequeue);
+    // console.log('DEQUEUE: ',dequeue);
 
     expect(dequeue.type).toEqual('dog');    
   });
@@ -73,7 +73,7 @@ describe('FIFO ANIMAL SHELTER MODULE', () => {
     newThing.enqueue(catObj);
     newThing.enqueue(catObj);
     newThing.enqueue(dogObj);
-    console.log('DEQUEUE: ',newThing);
+    // console.log('DEQUEUE: ',newThing);
 
     let dequeue = newThing.dequeue();
     // console.log('DEQUEUE: ',dequeue);
