@@ -1,6 +1,6 @@
 let Queue = require('../stacks_queues/queue_with_stacks.js');
 
-describe('QUEUE with STACKS MODULE', () => {
+xdescribe('QUEUE with STACKS MODULE', () => {
 
   it('ENQUEUE QUEUE method', () => {
     //should enqueue an element to the front NOT the back

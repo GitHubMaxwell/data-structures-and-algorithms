@@ -1,6 +1,6 @@
 let Tower = require('../stacks_queues/towers-of-hanoi.js');
 
-describe('TOWER OF HANOI MODULE', () => {
+xdescribe('TOWER OF HANOI MODULE', () => {
   
   function findLast(tower) {
     let current = tower.top;

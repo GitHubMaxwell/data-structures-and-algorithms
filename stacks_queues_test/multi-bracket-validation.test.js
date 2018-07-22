@@ -1,6 +1,6 @@
 let multiBracketValidation = require('../stacks_queues/multi-bracket-validation.js');
 
-describe('BRACKET VALIDATION MODULE', () => {
+xdescribe('BRACKET VALIDATION MODULE', () => {
 
   it('should resolve to true', () => {
 
