@@ -1,6 +1,6 @@
 let AnimalShelter = require('../stacks_queues/fifo_animal_shelter.js');
 
-describe('FIFO ANIMAL SHELTER MODULE', () => {
+xdescribe('FIFO ANIMAL SHELTER MODULE', () => {
 
   it('Enqueue a cat', () => {
     const newThing = new AnimalShelter;

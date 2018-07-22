@@ -158,3 +158,39 @@ cant put a larger disc on a smaller disc
 ## Solution
 <!-- Embedded whiteboard image -->
 <img src="assets/tower-of-hanoi.jpg">
+
+# CHALLENGE 16: Binary Trees: Fizz Buzz Tree
+<!-- Short summary or background information -->
+the idea is to return a modified tree per the challenge instructions below
+
+## Challenge
+<!-- Description of the challenge -->
+Without utilizing any of the built-in methods available to your language, determine weather or not the value of each node is divisible by 3, 5 or both, and change the value of each of the nodes respectively. Return the tree with it’s news values.
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/fizzbuzztree.jpg">
+
+# CHALLENGE 17: Binary Trees: Breadth First Search
+<!-- Short summary or background information -->
+print all the trees values in the order of the resulting breadth first search
+
+## Challenge
+<!-- Description of the challenge -->
+Write a function called breadthFirstTraversal which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/breadth-first-traversal.jpg">
+
+# CHALLENGE 18: Binary Trees: Find Maximum Value
+<!-- Short summary or background information -->
+the idea is to the node with the largest value in tree
+
+## Challenge
+<!-- Description of the challenge -->
+Write a function called find-maximum-value which takes binary tree as its only imput. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/find-maximum-value-binary-tree.jpg">

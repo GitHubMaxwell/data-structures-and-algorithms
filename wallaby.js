@@ -1,17 +1,19 @@
-module.exports = function (wallaby) {
+module.exports = function () {
 
   return {
   
     files: [
       // 'arrays/**/*.js',
       // 'll/**/*.js',
-      'stacks_queues/**/*.js',
+      // 'stacks_queues/**/*.js',
+      'trees/**/*.js',
     ],
   
     tests: [
       // 'arrays_test/**/*.test.js',
       // 'll_test/**/*.test.js',
-      'stacks_queues_test/**/*.test.js',
+      // 'stacks_queues_test/**/*.test.js',
+      'trees_test/**/*.js',
     ],
   
     testFramework: 'jest',
