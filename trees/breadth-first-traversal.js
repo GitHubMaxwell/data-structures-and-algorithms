@@ -116,38 +116,40 @@ class Tree {
   }
 
   static breadthFirstTraversal(tree) {
-    console.log(tree.head);
-    console.log(tree.head.value);
+    // console.log(tree.head);
+    // console.log(tree.head.value);
     let queue = new Queue;
     // let breadthOrder = '';//?
     let breadthOrder = [];
     // queue.enqueue(tree.head);
 
     function _bFT(node) {
-      console.log(node);
-      // breadthOrder += `${node.value}, `;//?
-      breadthOrder.push(node.value);//?
+      // console.log(node);
+      // breadthOrder += `${node.value}, `;
+      // if(!node.value) {
+      breadthOrder.push(node.value);
+      // }
 
       if(node.left){
         // console.log(node.left.value);
-        queue.enqueue(node.left);//?
+        queue.enqueue(node.left);
       }
       if(node.right){
         // console.log(node.right.value);
-        queue.enqueue(node.right);//?
+        queue.enqueue(node.right);
       }
       if(!queue.isEmpty){
-        let deq = queue.dequeue();//?
-        console.log(deq);
+        // let deq = queue.dequeue();
+        // console.log(deq);
         _bFT(queue.dequeue());
       }
-      // let deq = queue.dequeue();//?
+      // let deq = queue.dequeue();
       // _bFT(deq);
-      console.log(queue);
+      // console.log(queue);
       return;
     }
     _bFT(tree.head);
-    return breadthOrder;//?
+    return breadthOrder;
   }
 }
 
