@@ -159,7 +159,8 @@ cant put a larger disc on a smaller disc
 <!-- Embedded whiteboard image -->
 <img src="assets/tower-of-hanoi.jpg">
 
-# CHALLENGE 16: Binary Trees: Fizz Buzz Tree
+# CHALLENGE 16: Binary Trees: Fizz Buzz Tree 
+[![Build Status](https://travis-ci.com/GitHubMaxwell/data-structures-and-algorithms.svg?branch=FizzBuzzTree)](https://travis-ci.com/GitHubMaxwell/data-structures-and-algorithms)
 <!-- Short summary or background information -->
 the idea is to return a modified tree per the challenge instructions below
 
