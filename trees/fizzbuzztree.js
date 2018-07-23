@@ -89,7 +89,6 @@ class Tree {
     _fizzbuzztree(tree.head);
     return tree;
   }
-  
 }// close class
 
 module.exports = Tree;
