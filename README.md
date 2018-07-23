@@ -173,6 +173,7 @@ Without utilizing any of the built-in methods available to your language, determ
 <img src="assets/fizzbuzztree.jpg">
 
 # CHALLENGE 17: Binary Trees: Breadth First Search
+[![Build Status](https://travis-ci.com/GitHubMaxwell/data-structures-and-algorithms.svg?branch=breadth-first-traversal)](https://travis-ci.com/GitHubMaxwell/data-structures-and-algorithms)
 <!-- Short summary or background information -->
 print all the trees values in the order of the resulting breadth first search
 

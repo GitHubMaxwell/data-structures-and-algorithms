@@ -2,30 +2,45 @@
 
 let Tree = require('../trees/breadth-first-traversal.js');
 
-xdescribe('Breadth First Traversal Module', () => {
+describe('Breadth First Traversal Module', () => {
 
-  xit('POL: creates a binary tree', () => {
+  it('Test: return array [5,2,6]', () => {
     let newTree = new Tree();
-    newTree.add(3);
-    // console.log(newTree.head.data);
-    expect(newTree.head.value).toEqual(3);
-  });
+    let array = [5,2,6];
 
-  it('Test: return array [3,2,15,10]', () => {
-    let newTree = new Tree();
-    // let array = [3,2,15,10];
-    let array = [3,2,15];
-
-    newTree.add(3);
+    newTree.add(5);
     newTree.add(2);
-    newTree.add(15);
-    // newTree.add(2);
-    // newTree.add(10);
-    console.log(newTree);
+    newTree.add(6);
 
     let breadth = Tree.breadthFirstTraversal(newTree);//?
 
-    // console.log(newTree.head.right.value);
     expect(breadth).toEqual(array);
   });
+
+  it('Test: return array [3,2]', () => {
+    let newTree = new Tree();
+    let array = [3,2];
+  
+    newTree.add(3);
+    newTree.add(2);
+  
+    let breadth = Tree.breadthFirstTraversal(newTree);
+  
+    expect(breadth).toEqual(array);
+  });
+
+  it('Test: return array [13,5,22,10]', () => {
+    let newTree = new Tree();
+    let array = [13,5,22,10];
+  
+    newTree.add(13);
+    newTree.add(22);
+    newTree.add(5);
+    newTree.add(10);
+  
+    let breadth = Tree.breadthFirstTraversal(newTree);
+  
+    expect(breadth).toEqual(array);
+  });
+
 });
