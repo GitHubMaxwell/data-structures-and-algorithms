@@ -8,7 +8,6 @@ class Node {
     this.right = right;
   }
 }
-
 class Tree {
   constructor() {
     this.head = null;

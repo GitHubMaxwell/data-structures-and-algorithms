@@ -2,7 +2,7 @@
 
 let Tree = require('../trees/breadth-first-traversal.js');
 
-describe('Breadth First Traversal Module', () => {
+xdescribe('Breadth First Traversal Module', () => {
 
   xit('POL: creates a binary tree', () => {
     let newTree = new Tree();
