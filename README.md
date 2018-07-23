@@ -185,6 +185,7 @@ Write a function called breadthFirstTraversal which takes a Binary Tree as its u
 <img src="assets/breadth-first-traversal.jpg">
 
 # CHALLENGE 18: Binary Trees: Find Maximum Value
+[![Build Status](https://travis-ci.com/GitHubMaxwell/data-structures-and-algorithms.svg?branch=find-maximum-value-binary-tree)](https://travis-ci.com/GitHubMaxwell/data-structures-and-algorithms)
 <!-- Short summary or background information -->
 the idea is to the node with the largest value in tree
 
