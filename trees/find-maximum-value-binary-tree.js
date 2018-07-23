@@ -65,12 +65,12 @@ class Tree {
     let value;
     function _findMaximumValue(node) {
       if(!node.right) {
-        return value = node.value;//?
+        return value = node.value;
       }
       _findMaximumValue(node.right);
     }
-    _findMaximumValue(tree.head);//?
-    return value;//?
+    _findMaximumValue(tree.head);
+    return value;
   }
 
 } //close class

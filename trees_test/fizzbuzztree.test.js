@@ -2,7 +2,7 @@
 
 let Tree = require('../trees/fizzbuzztree.js');
 
-describe('FizzBuzzTree Module', () => {
+xdescribe('FizzBuzzTree Module', () => {
 
   it('Test: return fizzbuzz tree if head is null', () => {
     let newTree = new Tree();

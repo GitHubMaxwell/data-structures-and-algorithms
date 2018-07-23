@@ -3,7 +3,7 @@
 let Tree = require('../trees/find-maximum-value-binary-tree.js');
 
 
-xdescribe('Find Maximum Value Binary Tree Module', () => {
+describe('Find Maximum Value Binary Tree Module', () => {
 
   it('TEST: maximum value returned should be 4', () => {
     let newTree = new Tree();
