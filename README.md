@@ -197,3 +197,17 @@ Write a function called find-maximum-value which takes binary tree as its only i
 ## Solution
 <!-- Embedded whiteboard image -->
 <img src="assets/find-maximum-value-binary-tree.jpg">
+
+# CHALLENGE 31: Hash Tables: Repeated Word
+<!-- Short summary or background information -->
+the idea is to iterate through a string and remove repeated words
+
+## Challenge
+<!-- Description of the challenge -->
+    Write a function that accepts a lengthy string parameter.
+    Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+
+
+## Solution
+<!-- Embedded whiteboard image -->
+<img src="assets/repeated_word.jpg">
