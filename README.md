@@ -199,6 +199,7 @@ Write a function called find-maximum-value which takes binary tree as its only i
 <img src="assets/find-maximum-value-binary-tree.jpg">
 
 # CHALLENGE 31: Hash Tables: Repeated Word
+[![Build Status](https://travis-ci.com/GitHubMaxwell/data-structures-and-algorithms.svg?branch=repeated_word)](https://travis-ci.com/GitHubMaxwell/data-structures-and-algorithms)
 <!-- Short summary or background information -->
 the idea is to iterate through a string and remove repeated words
 
